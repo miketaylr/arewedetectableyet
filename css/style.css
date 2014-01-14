@@ -1,11 +1,3 @@
-
-/* line 1 : /Applications/LiveReload.app/Contents/Resources/Stylus.lrplugin/node_modules/stylus/lib/functions/index.styl */
-
-/* line 1 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_define.styl */
-
-/* line 106 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
-
-/* line 1 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
 article,
 aside,
 details,
@@ -19,7 +11,6 @@ section {
   display: block;
 }
 
-/* line 4 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
 audio,
 canvas,
 video {
@@ -28,24 +19,24 @@ video {
   *zoom: 1;
 }
 
-/* line 9 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 audio:not([controls]) {
   display: none;
 }
 
-/* line 12 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 [hidden] {
   display: none;
 }
 
-/* line 15 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 20 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 html,
 button,
 input,
@@ -55,61 +46,61 @@ textarea {
   color: #222;
 }
 
-/* line 24 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 body {
   margin: 0;
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* line 29 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a {
   color: #00e;
 }
 
-/* line 32 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a:visited {
   color: #551a8b;
 }
 
-/* line 35 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a:hover {
   color: #06e;
 }
 
-/* line 38 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a:focus {
   outline: thin dotted;
 }
 
-/* line 41 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 44 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 47 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 50 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 blockquote {
   margin: 1em 40px;
 }
 
-/* line 53 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 dfn {
   font-style: italic;
 }
 
-/* line 56 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 hr {
   display: block;
   height: 1px;
@@ -119,14 +110,14 @@ hr {
   padding: 0;
 }
 
-/* line 64 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none;
 }
 
-/* line 69 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 mark {
   background: #ff0;
   color: #000;
@@ -134,7 +125,7 @@ mark {
   font-weight: bold;
 }
 
-/* line 75 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 pre,
 code,
 kbd,
@@ -144,29 +135,31 @@ samp {
   font-size: 1em;
 }
 
-/* line 80 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 84 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+li pre {font-size: 13px;}
+
+
 q {
   quotes: none;
 }
 
-/* line 87 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 q:before,
 q:after {
   content: none;
 }
 
-/* line 90 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 small {
   font-size: 85%;
 }
 
-/* line 93 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 sub,
 sup {
   font-size: 75%;
@@ -175,29 +168,29 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 99 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 sup {
   top: -0.5em;
 }
 
-/* line 102 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 sub {
   bottom: -0.25em;
 }
 
-/* line 105 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 ul,
 ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
 
-/* line 109 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 112 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 nav ul,
 nav ol {
   list-style: none;
@@ -206,41 +199,41 @@ nav ol {
   padding: 0;
 }
 
-/* line 118 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
 
-/* line 123 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 126 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 figure {
   margin: 0;
 }
 
-/* line 129 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 form {
   margin: 0;
 }
 
-/* line 132 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 137 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 label {
   cursor: pointer;
 }
 
-/* line 140 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 legend {
   border: 0;
   *margin-left: -7px;
@@ -248,7 +241,7 @@ legend {
   white-space: normal;
 }
 
-/* line 146 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button,
 input,
 select,
@@ -259,13 +252,13 @@ textarea {
   *vertical-align: middle;
 }
 
-/* line 152 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button,
 input {
   line-height: normal;
 }
 
-/* line 155 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -275,13 +268,13 @@ input[type="submit"] {
   *overflow: visible;
 }
 
-/* line 160 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-/* line 163 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -290,7 +283,7 @@ input[type="radio"] {
   *height: 13px;
 }
 
-/* line 169 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -298,27 +291,27 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 175 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 178 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 182 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 textarea {
   overflow: auto;
   vertical-align: top;
   resize: vertical;
 }
 
-/* line 187 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 input:valid,
 textarea:valid,
 input:invalid,
@@ -326,18 +319,18 @@ textarea:invalid {
   background-color: #f0dddd;
 }
 
-/* line 192 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 196 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 td {
   vertical-align: top;
 }
 
-/* line 200 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 .cl:before,
 .cl:after {
   content: "\0020";
@@ -346,21 +339,21 @@ td {
   visibility: hidden;
 }
 
-/* line 206 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 .cl:after {
   clear: both;
 }
 
-/* line 209 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 .cl {
   zoom: 1;
 }
 
-/* line 1 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_define.styl */
 
-/* line 106 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
 
-/* line 1 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
+
+
 article,
 aside,
 details,
@@ -374,7 +367,7 @@ section {
   display: block;
 }
 
-/* line 4 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 audio,
 canvas,
 video {
@@ -383,24 +376,24 @@ video {
   *zoom: 1;
 }
 
-/* line 9 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 audio:not([controls]) {
   display: none;
 }
 
-/* line 12 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 [hidden] {
   display: none;
 }
 
-/* line 15 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 20 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 html,
 button,
 input,
@@ -410,61 +403,61 @@ textarea {
   color: #222;
 }
 
-/* line 24 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 body {
   margin: 0;
   font-size: 1em;
   line-height: 1.4;
 }
 
-/* line 29 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a {
   color: #00e;
 }
 
-/* line 32 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a:visited {
   color: #551a8b;
 }
 
-/* line 35 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a:hover {
   color: #06e;
 }
 
-/* line 38 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a:focus {
   outline: thin dotted;
 }
 
-/* line 41 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* line 44 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 47 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 50 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 blockquote {
   margin: 1em 40px;
 }
 
-/* line 53 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 dfn {
   font-style: italic;
 }
 
-/* line 56 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 hr {
   display: block;
   height: 1px;
@@ -474,14 +467,14 @@ hr {
   padding: 0;
 }
 
-/* line 64 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none;
 }
 
-/* line 69 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 mark {
   background: #ff0;
   color: #000;
@@ -489,7 +482,7 @@ mark {
   font-weight: bold;
 }
 
-/* line 75 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 pre,
 code,
 kbd,
@@ -499,29 +492,29 @@ samp {
   font-size: 1em;
 }
 
-/* line 80 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 84 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 q {
   quotes: none;
 }
 
-/* line 87 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 q:before,
 q:after {
   content: none;
 }
 
-/* line 90 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 small {
   font-size: 85%;
 }
 
-/* line 93 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 sub,
 sup {
   font-size: 75%;
@@ -530,29 +523,29 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 99 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 sup {
   top: -0.5em;
 }
 
-/* line 102 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 sub {
   bottom: -0.25em;
 }
 
-/* line 105 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 ul,
 ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
 
-/* line 109 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 112 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 nav ul,
 nav ol {
   list-style: none;
@@ -561,41 +554,41 @@ nav ol {
   padding: 0;
 }
 
-/* line 118 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
 
-/* line 123 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 126 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 figure {
   margin: 0;
 }
 
-/* line 129 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 form {
   margin: 0;
 }
 
-/* line 132 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/* line 137 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 label {
   cursor: pointer;
 }
 
-/* line 140 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 legend {
   border: 0;
   *margin-left: -7px;
@@ -603,7 +596,7 @@ legend {
   white-space: normal;
 }
 
-/* line 146 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button,
 input,
 select,
@@ -614,13 +607,13 @@ textarea {
   *vertical-align: middle;
 }
 
-/* line 152 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button,
 input {
   line-height: normal;
 }
 
-/* line 155 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button,
 input[type="button"],
 input[type="reset"],
@@ -630,13 +623,13 @@ input[type="submit"] {
   *overflow: visible;
 }
 
-/* line 160 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-/* line 163 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -645,7 +638,7 @@ input[type="radio"] {
   *height: 13px;
 }
 
-/* line 169 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -653,27 +646,27 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 175 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 178 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 182 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 textarea {
   overflow: auto;
   vertical-align: top;
   resize: vertical;
 }
 
-/* line 187 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 input:valid,
 textarea:valid,
 input:invalid,
@@ -681,18 +674,18 @@ textarea:invalid {
   background-color: #f0dddd;
 }
 
-/* line 192 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 196 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 td {
   vertical-align: top;
 }
 
-/* line 200 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 .cl:before,
 .cl:after {
   content: "\0020";
@@ -701,29 +694,29 @@ td {
   visibility: hidden;
 }
 
-/* line 206 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 .cl:after {
   clear: both;
 }
 
-/* line 209 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/_reset.styl */
+
 .cl {
   zoom: 1;
 }
 
-/* line 211 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
 
-/* line 1 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
+
+
 #feedback > h3 {
   text-align: center;
 }
 
-/* line 4 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
+
 .report-card-browser {
   margin-top: 3em;
 }
 
-/* line 7 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
+
 .report-card-browser h3 img {
   width: 2em;
   position: relative;
@@ -731,33 +724,33 @@ td {
   padding-right: 0.3em;
 }
 
-/* line 13 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
 
-/* line 14 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
+
+
 .report-card-section h4 {
   margin-bottom: 0.5em;
 }
 
-/* line 17 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
+
 .bar-chart {
   width: 100%;
 }
 
-/* line 19 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
+
 .bar-chart .bar-chart-background,
 .bar-chart .bar-chart-bar {
   display: inline-block;
   height: 1.2em;
 }
 
-/* line 23 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
+
 .bar-chart .bar-chart-background {
   width: 100%;
   background: #f00;
   position: relative;
 }
 
-/* line 28 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/graph.styl */
+
 .bar-chart .bar-chart-bar {
   background: #32cd32;
   position: absolute;
@@ -765,45 +758,46 @@ td {
   width: 0%;
 }
 
-/* line 9 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-/* line 13 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 ::-webkit-input-placeholder {
   color: #aaa;
   font-weight: 200;
 }
 
-/* line 17 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 :-moz-placeholder {
   color: #aaa;
   font-weight: 200;
 }
 
-/* line 21 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 ::-moz-placeholder {
   color: #aaa;
   font-weight: 200;
 }
 
-/* line 25 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  background: url("http://andyet.com/images/header.png");
-  background-position: top center;
+  background: url(../images/glasses.png) no-repeat scroll center top transparent;
+  background-position: center 2%;
   background-repeat: no-repeat;
+  background-size: 400px Auto;
 }
 
-/* line 31 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 .wrap {
   width: 760px;
-  margin: 150px auto;
+  margin: 380px auto;
 }
 
-/* line 35 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 h1 {
   text-align: center;
   font-size: 50px;
@@ -811,7 +805,7 @@ h1 {
   color: #333;
 }
 
-/* line 41 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 h2 {
   font-weight: 200;
   color: #333;
@@ -820,24 +814,25 @@ h2 {
   padding: 0 0 10px 0;
 }
 
-/* line 48 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 p {
   margin: 10px 0;
 }
 
-/* line 51 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 p + h2 {
   margin-top: 40px;
 }
 
-/* line 54 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 a:link,
 a:visited {
   color: #12acef;
 }
 
-/* line 57 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 .card {
+  background-color: #fff;
   border: 1px solid #eee;
   margin: 20px auto;
   padding: 20px 40px 40px 40px;
@@ -846,33 +841,36 @@ a:visited {
   box-shadow: rgba(0,0,0,0.05) 0 2px 10px;
 }
 
-/* line 63 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 .card h2 {
   border-bottom: 1px solid #eee;
   text-align: center;
 }
 
-/* line 67 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 .card + .card {
   margin-top: 40px;
 }
 
-/* line 70 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 td {
   border: 1px solid #fff;
   width: 75px;
+  text-align: center;
+  font-size: 14px;
 }
 
-/* line 74 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+td a {color: #fff !important;}
+
 .browsers th,
 .versions th {
   text-align: center;
   padding-right: 0px;
 }
 
-/* line 78 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
 
-/* line 79 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
+
 .browsers th {
   font-size: 13px;
   text-transform: uppercase;
@@ -881,34 +879,20 @@ td {
   color: #777;
 }
 
-/* line 86 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 .browsers img {
   width: 48px;
   margin-bottom: 10px;
 }
 
-/* line 90 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
-tr.about {
-  display: none;
-}
 
-/* line 93 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
-tr.about td {
-  font-size: 13px;
-  padding: 5px;
-  color: #555;
-  background-color: #fafafa;
-  border-bottom: 10px solid #fff;
-}
-
-/* line 100 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
 .versions th {
   font-weight: bold;
   font-size: 13px;
   padding-bottom: 10px;
 }
 
-/* line 105 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 th {
   text-align: right;
   font-weight: normal;
@@ -916,41 +900,54 @@ th {
   padding-right: 10px;
 }
 
-/* line 111 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+th.lang {font-weight: bold;}
+
+
 th a:link,
 th a:visited {
   color: #333;
-  cursor: help;
 }
 
-/* line 115 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+th sup a:link, th sup a:visited {color: orangered;}
+
+
 .yes {
   background: #32cd32;
 }
 
-/* line 118 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
-.inc {
+
+.info {
   background: #ffd700;
 }
 
-/* line 121 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+.info:before {content: "?";}
+
+
 .no {
   background: #f00;
 }
 
-/* line 124 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+.n-a {
+  background-image: -webkit-linear-gradient(45deg,#bbb 10%, transparent 10%,transparent 20%, #bbb 20%,#bbb 30%, transparent 30%,transparent 40%, #bbb 40%,#bbb 50%, transparent 50%,transparent 60%, #bbb 60%,#bbb 70%, transparent 70%,transparent 80%, #bbb 80%,#bbb 90%, transparent 90%,transparent);
+  background-image: -moz-linear-gradient(45deg,#bbb 10%, transparent 10%,transparent 20%, #bbb 20%,#bbb 30%, transparent 30%,transparent 40%, #bbb 40%,#bbb 50%, transparent 50%,transparent 60%, #bbb 60%,#bbb 70%, transparent 70%,transparent 80%, #bbb 80%,#bbb 90%, transparent 90%,transparent);
+  background-image: linear-gradient(45deg,#bbb 10%, transparent 10%,transparent 20%, #bbb 20%,#bbb 30%, transparent 30%,transparent 40%, #bbb 40%,#bbb 50%, transparent 50%,transparent 60%, #bbb 60%,#bbb 70%, transparent 70%,transparent 80%, #bbb 80%,#bbb 90%, transparent 90%,transparent);
+}
+
+.n-a:before {content: "N/A";}
+
+
 section + section {
   margin-top: 60px;
 }
 
-/* line 127 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 article {
   float: left;
   width: 60%;
   box-sizing: border-box;
 }
 
-/* line 132 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 aside {
   float: right;
   width: 33%;
@@ -960,36 +957,36 @@ aside {
   text-align: center;
 }
 
-/* line 140 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 aside h3 {
   font-size: 16px;
   margin-bottom: 10px;
 }
 
-/* line 144 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 aside p {
   text-align: left;
   margin: 10px 0;
   font-size: 13px;
 }
 
-/* line 149 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 .talky {
   width: 100px;
   margin: 10px auto;
   display: block;
 }
 
-/* line 155 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
 @media (max-width: 760px) {
 
-/* line 156 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
   .wrap {
     width: 90%;
-    margin-top: 80px;
+    margin-top: 200px;
   }
 
-/* line 160 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
   article,
   aside {
     float: none;
@@ -997,24 +994,21 @@ aside p {
     padding: 0 20px;
   }
 
-/* line 165 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
   aside {
     margin-top: 40px;
   }
 
-/* line 168 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
-  body {
-    background-size: 200%;
-  }
-
-/* line 171 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
   h1 {
     font-size: 40px;
     line-height: 1;
     margin-bottom: 30px;
+    background-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
   }
 
-/* line 176 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
   h2 {
     font-weight: bold;
     font-size: 22px;
@@ -1022,38 +1016,38 @@ aside p {
     margin-bottom: 10px;
   }
 
-/* line 182 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
   .browsers img {
     width: 24px;
     margin-bottom: 3px;
   }
 
-/* line 186 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
   .versions {
     display: none;
   }
 
-/* line 189 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
   th {
     font-size: 11px;
   }
 
-/* line 192 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
   td {
     height: 30px;
   }
 
-/* line 195 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+
   #support {
     padding: 10px;
   }
 }
 
-/* line 199 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
-@media (max-width: 400px) {
 
-/* line 200 : /Users/latentflip/Projects/andyet/iswebrtcreadyyet.com/css/style.styl */
+@media (max-width: 400px) {
+ body {background-image:none;}
   .wrap {
     width: 320px;
+    margin-top: 20px;
   }
 }
