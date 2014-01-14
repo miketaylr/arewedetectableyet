@@ -1,210 +1,447 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Is WebRTC ready yet?</title>
+    <title>Are We Detectable Yet?</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/prettify.css">
   </head>
   <body>
+  <p style="padding: 25px;background:red;position:fixed;top:0;right:0;">hello, this is a work in progress.</p>
     <div class="wrap">
       <section>
-        <h1>Is WebRTC ready yet?</h1>
+        <h1>Are We Detectable Yet?</h1>
         <div id="support" class="card">
-          <h2>Browser support scorecard</h2>
-          <table>
+          <h2>Mobile &amp; Tablet Browser Detection Scorecard</h2>
+          <table style="margin: 0 auto;">
             <tr class="browsers">
               <th> </th>
-              <th><img src="images/canary.png" alt="Chrome Canary" title="Chrome Canary"></th>
-              <th> <img src="images/chrome.png" alt="Chrome" title="Chrome"></th>
-              <th> <img src="images/nightly.png" alt="Firefox Nightly" title="Firefox Nightly"></th>
               <th><img src="images/firefox.png" alt="Firefox" title="Firefox"></th>
-              <th><img src="images/ie.png" alt="Internet Explorer" title="Internet Explorer"></th>
-              <th><img src="images/safari.png" alt="Safari" title="Safari"></th>
-              <th><img src="images/opera.png" alt="Opera" title="Opera"></th>
+              <th><img src="images/firefox.png" alt="Firefox" title="Firefox"></th>
+              <th><img src="images/firefox.png" alt="Firefox" title="Firefox"></th>
+              <th><img src="images/firefox.png" alt="Firefox" title="Firefox"></th>
+              <th><img src="images/firefox.png" alt="Firefox" title="Firefox"></th>
             </tr>
             <tr class="versions">
               <th></th>
-              <th>Canary</th>
-              <th>Chrome 31</th>
-              <th>Nightly</th>
-              <th>Firefox 25</th>
-              <th>IE</th>
-              <th>Safari</th>
-              <th>Opera 18</th>
+              <th>Firefox OS<sup>[<a href="#ua-1">1</a>]</sup></th>
+              <th>Firefox OS (Fireweb)<sup>[<a href="#ua-2">2</a>]</sup></th>
+              <th>Firefox OS Tablet<sup>[<a href="#ua-3">3</a>]</sup></th>
+              <th>Firefox for Android<sup>[<a href="#ua-4">4</a>]</sup></th>
+              <th>Firefox for Android Tablet<sup>[<a href="#ua-5">5</a>]</sup></th>
+            </tr>
+            <tr><th class="lang">Go</th><th colspan="4"></th></tr>
+            <tr>
+                <th><a href="https://github.com/mssola/user_agent">UserAgent</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr><th class="lang">Java</th><th colspan="4"></th></tr>
+            <tr>
+                <th><a href="https://github.com/before/uadetector">UADetector</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th class="feature"> <a href="#peerConn">PeerConnections</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
+                <th><a href="https://github.com/HaraldWalker/user-agent-utils/">User Agent Utils</a></th>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=915727">915727</a></td>
+                <td class="info"></td>
+                <td class="info"></td>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=915727">915727</a></td>
+                <td class="info"></td>
             </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">The basic building block for connecting to peers.</td>
+            <tr><th class="lang">JavaScript</th><th colspan="4"></th></tr>
+            <tr>
+                <th><a href="https://github.com/darcyclarke/Detect.js">Detect.js</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#getUserMedia">getUserMedia</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">The ability to request access to a user's webcam and microphone.</td>
+                <th><a href="https://github.com/barisaydinoglu/Detectizr">Detectizr</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=956998">956998</a></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#mediaConstraints" title="for bandwidth control">mediaConstraints</a></th>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="inc"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">The ability to specify restricted video sizes. This is important for bandwidth control. There are two aspects to this. The first is being able to specify constraints when first requesting access. The second is allowing you to apply constraints to an existing MediaStream. </td>
+                <th><a href="http://matthewhudson.me/projects/device.js/">Device.js</a></th>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=915853">915853</a></td>
+                <td class="info"></td>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=915853">915853</a></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#turn">TURN support</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">TURN servers are necessary for situations where STUN fails to produce two addressable endpoints. Which is a fancy way of saying, "getting around firewalls."</td>
+                <th><a href="https://npmjs.org/package/express-device">Express Device</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#mediaStream">MediaStream API</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">When you request user media or get media from a peer it's held in a MediaStream object. Having the ability to add/remove tracks, mute, and apply constraints makes it possible to do audio processing and control bandwidth consumption.</td>
+                <th><a href="https://github.com/kaimallea/isMobile">isMobile</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#webAudio">WebAudio Integration</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">WebAudio enables processing of raw audio. For WebRTC applications it's important that this capability not only exist, but that it's capable of being used with a MediaStream as a source.</td>
+                <th><a href="https://github.com/Wayla/is-mobile">is-mobile</a></th>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=914231">914231</a></td>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=914231">914231</a></td>
+                <td class="n-a"></td>
+                <td class="yes"></td>
+                <td class="n-a"></td>
             </tr>
             <tr>
-              <th><a href="#reliable">reliable dataChannels</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">Data channel support comes in two flavors: "reliable" means they are guaranteed to arrive and arrive in the correct order, "unreliable" means that order doesn't matter and dropped messages are acceptable.</td>
+                <th><a href="https://github.com/sebarmeli/JS-Redirection-Mobile-Site">JS Redirection Mobile Site</a></th>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=932458">932458</a></td>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=932458">932458</a></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#unreliable">unreliable dataChannels</a></th>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="yes"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="yes"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">Data channel support comes in two flavors: "reliable" means they are guaranteed to arrive and arrive in the correct order, "unreliable" means that order doesn't matter and dropped messages are acceptable.</td>
+                <th><a href="http://jquerymobile.com/">jQuery Mobile</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#screenSharing">Screen Sharing</a></th>
-              <td title="requires a flag" class="inc"></td>
-              <td title="requires a flag" class="inc"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">The ability to request access to a MediaStream of the computer screen. This is crucial for feature parity with existing communication solutions.</td>
+                <th><a href="https://github.com/fabdrol/mobileagent">Mobile Agent</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#rebroadcast">Stream re-broadcasting</a></th>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">In order to support some of the more interesting topologies for routing data, we need to be able to take a MediaStream object from one peer and add it to another PeerConneciton. Without this, the only way of doing multi-user is a mesh network or a centralized server.</td>
+                <th><a href="https://github.com/mootools">Mootools</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#echo">Solid interoperability</a></th>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="inc"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="inc"></td>
-            </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">Multiple browsers consistently being able to talk to each other is essential to making WebRTC a true web technology and not just something that makes for a nice demo.</td>
+                <th><a href="https://github.com/jujhars13/node-user-agent-parse">Node User Agent Parse</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
             </tr>
             <tr>
-              <th><a href="#echo">Echo cancellation</a></th>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
-              <td class="no"></td>
+                <th><a href="https://github.com/bestiejs/platform.js/">Platform.js</a></th>
+                <td class="no"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=913633">913633</a></td>
+                <td class="info"></td>
+                <td class="info"></td>
+                <td class="no"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=913633">913633</a></td>
+                <td class="info"></td>
             </tr>
-            <tr class="about">
-              <th></th>
-              <td colspan="7">This may be the most subjective item in this list. 3 or 4 users should be able to use a service like Talky without headphones on and not experience feedback problems.</td>
+            <tr>
+                <th><a href="https://github.com/faisalman/ua-parser-js">ua-parser-js</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="ttps://github.com/3rd-Eden/useragent">useragent </a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://yuilibrary.com/">YUI</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="https://github.com/g13n/ua.js">UA.js</a></th>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=913189">913189</a></td>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=913189">913189</a></td>
+                <td class="no"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr><th class="lang">Multiple Languages</th><th colspan="4"></th></tr>
+            <tr>
+                <th><a href="https://github.com/tobie/ua-parser">ua-parser</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://blog.mobileesp.com/">Mobile ESP </a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+              <th><a href="http://detectmobilebrowsers.com">detectmobilebrowsers.com</a></th>
+              <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=914241">914241</a></td>
+              <td class="yes"></td>
+              <td class="yes"></td>
+              <td class="yes"></td>
+              <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="https://github.com/woothee/woothee">Woothee Bug</a></th>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=914313">914313</a></td>
+                <td class="info"></td>
+                <td class="info"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr><th class="lang">Perl</th><th colspan="4"></th></tr>
+            <tr>
+                <th><a href="https://github.com/oalders/http-browserdetect">HTTP::BrowserDetect</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr><th class="lang">PHP</th><th colspan="4"></th></tr>
+            <tr>
+                <th><a href="https://github.com/bjankord/Categorizr">Categorizr</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://detector.dmolsen.com/">Detector (Drupal)</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://mobiledetect.net/">Mobile-Detect</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="Bundle https://github.com/suncat2000/MobileDetectBundle">Mobile Detect</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="https://github.com/ornicar/php-user-agent">PHP User Agent</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="https://github.com/donatj/PhpUserAgent">PHP User Agent Parser</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://wordpress.org/plugins/wp-mobile-detect/">WordPress Mobile Detect</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://www.bravenewcode.com/wptouch/">WPTouch</a></th>
+                <td class="no"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=909420">909420</a></td>
+                <td class="no"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=909420">909420</a></td>
+                <td class="no"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=909420">909420</a></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr><th class="lang">Python</th><th colspan="4"></th></tr>
+            <tr>
+                <th><a href="https://github.com/gregmuellegger/django-mobile">Django Mobile</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            <tr>
+                <th><a href="https://pypi.python.org/pypi/gomobile.mobile">GoMobile</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            <tr>
+                <th><a href="https://github.com/saschwarz/minidetector/network">minidetector</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            <tr>
+                <th><a href="https://github.com/selwin/python-user-agents">Python User Agents</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr><th class="lang">Ruby</th><th colspan="4"></th></tr>
+            <tr>
+                <th><a href="https://github.com/kevinelliott/agent_orange">agent_orange</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="https://github.com/fnando/browser">browser</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="https://github.com/jistr/mobvious">Mobvious</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="https://github.com/josh/useragent">UserAgent</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="Parser https://github.com/toolmantim/user_agent_parser">User Agent</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr><th class="lang">Server Frameworks</th><th colspan="4"></th></tr>
+            <tr>
+                <th><a href="http://litedetection.apachemobilefilter.org">Apache Mobile Filter</a></th>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=916250">916250</a></td>
+                <td class="yes"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=916250">916250</a></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://51degrees.mobi/Products/DeviceDetection.aspx">51 Degrees</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://detectright.com/">Detect Right</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="https://deviceatlas.com/device-data/user-agent-tester">DeviceAtlas</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://handsetdetection.com">http://handsetdetection.com</a></th>
+                <td class="no"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=957205">957205</a></td>
+                <td class="no"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=957205">957205</a></td>
+                <td class="no"><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=957205">957205</a></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://netbiscuits.com/">Netbiscuits</a></th>
+                <td class="info"></td>
+                <td class="info"></td>
+                <td class="info"></td>
+                <td class="info"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://openddr.org/">OpenDDR</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="info"></td>
+            </tr>
+            <tr>
+                <th><a href="http://tools.scientiamobile.com/?user-agent-string">WURFL</a></th>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
+                <td class="yes"></td>
             </tr>
           </table>
         </div>
-        <p><small>See an error? This site is open source on Github, please let us know by <a href="https://github.com/miketaylr/arewedetectableyet/issues">opening an issue</a>.</small></p>
+        <div id="uas">
+            User Agent strings tested. More info <a href="https://developer.mozilla.org/en-US/docs/Gecko_user_agent_string_reference">here</a>.
+            <ol>
+                <li id="ua-1"><pre>Mozilla/5.0 (Mobile; rv:18.1) Gecko/18.1 Firefox/18.1</pre></li>
+                <li id="ua-2"><pre>Mozilla/5.0 (Mobile; LG-D300; rv:18.1) Gecko/18.1 Firefox/18.1</pre></li>
+                <li id="ua-3"><pre>Mozilla/5.0 (Tablet; rv:26.0) Gecko/18.0 Firefox/26.0</pre></li>
+                <li id="ua-4"><pre>Mozilla/5.0 (Android; Mobile; rv:26.0) Gecko/26.0 Firefox/26.0</pre></li>
+                <li id="ua-5"><pre>Mozilla/5.0 (Android; Tablet; rv:26.0) Gecko/26.0 Firefox/26.0</pre></li>
+            </ol>
+        </div>
+        <p><small>Are we missing a framework, or is some info inaccurate? Let us know by <a href="https://github.com/miketaylr/arewedetectableyet/issues">opening an issue</a>.</small></p>
       </section>
     </div>
   </body>
