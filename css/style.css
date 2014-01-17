@@ -1037,15 +1037,35 @@ aside p {
     height: 30px;
   }
 
+  th, td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 110px;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+
 
   #support {
     padding: 10px;
   }
 }
 
+@media (max-width: 650px) {
+    th, td {max-width: 80px}
+    th sup {display: none;}
+}
+
+@media (max-width: 500px) {
+    th, td {max-width: 60px}
+    th sup {display: none;}
+}
 
 @media (max-width: 400px) {
  body {background-image:none;}
+ th, td {max-width: 50px}
+ th sup {display: none;}
   .wrap {
     width: 320px;
     margin-top: 20px;
