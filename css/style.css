@@ -138,6 +138,7 @@ th { text-align: right; font-weight: normal; font-size: 13px; padding-right: 10p
 th.lang { font-weight: bold }
 th a:link, th a:visited { color: #333 }
 th sup a:link, th sup a:visited { color: orangered }
+td.legend-explanation {text-align: left;padding:5px;}
 .yes { background: #32cd32 }
 .info { background: #ffd700 }
 .info:before { content: "?" }
@@ -150,7 +151,7 @@ aside { float: right; width: 33%; box-sizing: border-box; background: #fafafa; p
 aside h3 { font-size: 16px; margin-bottom: 10px; }
 aside p { text-align: left; margin: 10px 0; font-size: 13px; }
 .talky { width: 100px; margin: 10px auto; display: block; }
-@media (max-width: 760px) { 
+@media (max-width: 760px) {
     .wrap { width: 90%; margin-top: 200px; }
     article, aside { float: none; width: 100%; padding: 0 20px; }
     aside { margin-top: 40px }
@@ -163,15 +164,15 @@ aside p { text-align: left; margin: 10px 0; font-size: 13px; }
     th, td { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: 110px; font-size: 12px; vertical-align: middle; }
     #support { padding: 10px }
 }
-@media (max-width: 650px) { 
+@media (max-width: 650px) {
     th, td { max-width: 80px }
     th sup { display: none }
 }
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
     th, td { max-width: 60px }
     th sup { display: none }
 }
-@media (max-width: 400px) { 
+@media (max-width: 400px) {
     body { background-image: none }
     th, td { max-width: 50px }
     th sup { display: none }
@@ -332,7 +333,7 @@ aside { float: right; width: 33%; box-sizing: border-box; background: #fafafa; p
 aside h3 { font-size: 16px; margin-bottom: 10px; }
 aside p { text-align: left; margin: 10px 0; font-size: 13px; }
 .talky { width: 100px; margin: 10px auto; display: block; }
-@media (max-width: 760px) { 
+@media (max-width: 760px) {
     .wrap { width: 90%; margin-top: 200px; }
     article, aside { float: none; width: 100%; padding: 0 20px; }
     aside { margin-top: 40px }
@@ -345,15 +346,15 @@ aside p { text-align: left; margin: 10px 0; font-size: 13px; }
     th, td { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: 110px; font-size: 12px; vertical-align: middle; }
     #support { padding: 10px }
 }
-@media (max-width: 650px) { 
+@media (max-width: 650px) {
     th, td { max-width: 80px }
     th sup { display: none }
 }
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
     th, td { max-width: 60px }
     th sup { display: none }
 }
-@media (max-width: 400px) { 
+@media (max-width: 400px) {
     body { background-image: none }
     th, td { max-width: 50px }
     th sup { display: none }
