@@ -151,6 +151,7 @@ aside { float: right; width: 33%; box-sizing: border-box; background: #fafafa; p
 aside h3 { font-size: 16px; margin-bottom: 10px; }
 aside p { text-align: left; margin: 10px 0; font-size: 13px; }
 .talky { width: 100px; margin: 10px auto; display: block; }
+.fxios {border-radius: 9px;}
 @media (max-width: 760px) {
     .wrap { width: 90%; margin-top: 200px; }
     article, aside { float: none; width: 100%; padding: 0 20px; }
